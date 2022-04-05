@@ -1,4 +1,4 @@
-public class Funcionario extends Gerente{
+public class Funcionario{
 
     private String nome;
     private String CPF;
@@ -29,5 +29,8 @@ public class Funcionario extends Gerente{
         this.departamento = departamento;
     }
 
+    public double bonificacao(){
+        return this.getSalario()+(this.getSalario()*0.1);
+    }
     
 }

@@ -1,13 +1,20 @@
-public class Gerente {
+public class Gerente extends Funcionario{
 
-    public int senha;
+    public double senha;
 
-    public int getSenha() {
+    public double getSenha() {
         return senha;
-    } public void setSenha(int senha) {
+    } public void setSenha(double senha) {
         this.senha = senha;
-    }
+    } 
+    
+    public boolean autenticacao(double senhaInput){
+        if (senhaInput == this.getSenha()){
+            return true;
+        }else{
+            return false;
+        }
 
-    
-    
-}
+    }
+}  
+
