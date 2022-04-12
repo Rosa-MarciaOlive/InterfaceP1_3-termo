@@ -13,7 +13,15 @@ public class Gerente extends Funcionario{
             return true;
         }else{
             return false;
+        }/* ouuu
+        public void autentificacao(int senha){
+
+        if(senha == getSenha()){
+            System.out.println("Acesso liberado");
+        }else{
+            System.out.println("Acesso negado");
         }
+    }*/
 
     }
 }  
